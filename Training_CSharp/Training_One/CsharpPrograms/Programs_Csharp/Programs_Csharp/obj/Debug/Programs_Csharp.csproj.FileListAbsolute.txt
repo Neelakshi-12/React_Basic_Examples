@@ -1,0 +1,7 @@
+D:\NTT DATA\Training_CSharp\Training_One\CsharpPrograms\Programs_Csharp\Programs_Csharp\bin\Debug\Programs_Csharp.exe.config
+D:\NTT DATA\Training_CSharp\Training_One\CsharpPrograms\Programs_Csharp\Programs_Csharp\bin\Debug\Programs_Csharp.exe
+D:\NTT DATA\Training_CSharp\Training_One\CsharpPrograms\Programs_Csharp\Programs_Csharp\bin\Debug\Programs_Csharp.pdb
+D:\NTT DATA\Training_CSharp\Training_One\CsharpPrograms\Programs_Csharp\Programs_Csharp\obj\Debug\Programs_Csharp.csproj.AssemblyReference.cache
+D:\NTT DATA\Training_CSharp\Training_One\CsharpPrograms\Programs_Csharp\Programs_Csharp\obj\Debug\Programs_Csharp.csproj.CoreCompileInputs.cache
+D:\NTT DATA\Training_CSharp\Training_One\CsharpPrograms\Programs_Csharp\Programs_Csharp\obj\Debug\Programs_Csharp.exe
+D:\NTT DATA\Training_CSharp\Training_One\CsharpPrograms\Programs_Csharp\Programs_Csharp\obj\Debug\Programs_Csharp.pdb

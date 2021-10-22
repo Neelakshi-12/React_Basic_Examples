@@ -1,0 +1,7 @@
+D:\NTT DATA\Training_CSharp\Training_One\AssignmentOne\AssignmentOne\bin\Debug\AssignmentOne.exe.config
+D:\NTT DATA\Training_CSharp\Training_One\AssignmentOne\AssignmentOne\bin\Debug\AssignmentOne.exe
+D:\NTT DATA\Training_CSharp\Training_One\AssignmentOne\AssignmentOne\bin\Debug\AssignmentOne.pdb
+D:\NTT DATA\Training_CSharp\Training_One\AssignmentOne\AssignmentOne\obj\Debug\AssignmentOne.csproj.AssemblyReference.cache
+D:\NTT DATA\Training_CSharp\Training_One\AssignmentOne\AssignmentOne\obj\Debug\AssignmentOne.csproj.CoreCompileInputs.cache
+D:\NTT DATA\Training_CSharp\Training_One\AssignmentOne\AssignmentOne\obj\Debug\AssignmentOne.exe
+D:\NTT DATA\Training_CSharp\Training_One\AssignmentOne\AssignmentOne\obj\Debug\AssignmentOne.pdb

@@ -1,0 +1,7 @@
+D:\NTT DATA\Training_CSharp\Training_One\database1\DataBaseExample1\DataBaseExample1\bin\Debug\DataBaseExample1.exe.config
+D:\NTT DATA\Training_CSharp\Training_One\database1\DataBaseExample1\DataBaseExample1\bin\Debug\DataBaseExample1.exe
+D:\NTT DATA\Training_CSharp\Training_One\database1\DataBaseExample1\DataBaseExample1\bin\Debug\DataBaseExample1.pdb
+D:\NTT DATA\Training_CSharp\Training_One\database1\DataBaseExample1\DataBaseExample1\obj\Debug\DataBaseExample1.csproj.AssemblyReference.cache
+D:\NTT DATA\Training_CSharp\Training_One\database1\DataBaseExample1\DataBaseExample1\obj\Debug\DataBaseExample1.csproj.CoreCompileInputs.cache
+D:\NTT DATA\Training_CSharp\Training_One\database1\DataBaseExample1\DataBaseExample1\obj\Debug\DataBaseExample1.exe
+D:\NTT DATA\Training_CSharp\Training_One\database1\DataBaseExample1\DataBaseExample1\obj\Debug\DataBaseExample1.pdb
