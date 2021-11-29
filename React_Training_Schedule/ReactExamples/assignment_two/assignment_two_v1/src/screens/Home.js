@@ -11,15 +11,17 @@ import { deleteUser, loadUsers } from "./redux/actions";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import { useHistory } from "react-router-dom";
+import Icon from "@material-ui/core/Icon";
 
 import { useDispatch, useSelector } from "react-redux";
 const StyledTableCell = withStyles((theme) => ({
   head: {
-    backgroundColor: theme.palette.common.black,
+    backgroundColor: "#006d77",
     color: theme.palette.common.white,
   },
   body: {
     fontSize: 14,
+    fontWeight: "bold",
   },
 }))(TableCell);
 
@@ -30,18 +32,6 @@ const StyledTableRow = withStyles((theme) => ({
     },
   },
 }))(TableRow);
-
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
-
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
-];
 
 const useStyles = makeStyles({
   table: {
@@ -80,64 +70,106 @@ const Home = () => {
 
   return (
     <div>
-      <h2>Welcome Home</h2>
-      <div className={buttonStyles.root}>
-        <Button
-          variant="contained"
-          color="secondary"
-          onClick={() => history.push("/addUser")}
-        >
-          Add Employee
-        </Button>
+      <h2
+        style={{
+          marginTop: "30px",
+          color: "green",
+          fontFamily: "monospace",
+          fontWeight: "bold",
+        }}
+      >
+        Employee Details Page
+      </h2>
+
+      <div className={buttonStyles.root}></div>
+
+      <div style={{ marginLeft: "200px", marginRight: "200px" }}>
+        <div class="d-flex flex-row">
+          <div class="p-2">
+            {" "}
+            <button
+              className="btn btn-success"
+              onClick={() => history.push("/addUser")}
+            >
+              Add Employee{" "}
+              <Icon style={{ marginBottom: "-5px" }}>add_circle</Icon>
+            </button>
+          </div>
+        </div>
+
+        <TableContainer component={Paper}>
+          <Table
+            style={{ backgroundColor: "#edf6f9" }}
+            aria-label="customized table"
+          >
+            <TableHead>
+              <TableRow>
+                <StyledTableCell>Name </StyledTableCell>
+                <StyledTableCell align="center">Email</StyledTableCell>
+                <StyledTableCell align="center">Contact</StyledTableCell>
+                <StyledTableCell align="center">Address</StyledTableCell>
+                <StyledTableCell align="center">Action</StyledTableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {users.map((user) => (
+                <StyledTableRow key={user.id}>
+                  <StyledTableCell component="th" scope="row">
+                    {user.name}
+                  </StyledTableCell>
+                  <StyledTableCell align="center">{user.email}</StyledTableCell>
+                  <StyledTableCell align="center">
+                    {user.contact}
+                  </StyledTableCell>
+                  <StyledTableCell align="center">
+                    {user.address}
+                  </StyledTableCell>
+                  <StyledTableCell align="center">
+                    <div className={buttonStyles.root}>
+                      <ButtonGroup
+                        size="small"
+                        variant="contained"
+                        aria-label="contained primary button group"
+                      >
+                        <button
+                          style={{ marginRight: "5px" }}
+                          className="btn btn-warning"
+                          color="primary"
+                          onClick={() => history.push(`/editUser/${user.id}`)}
+                        >
+                          Edit{" "}
+                          <Icon style={{ marginBottom: "-4px" }}>edit</Icon>
+                        </button>
+                        <button
+                          className="btn btn-danger"
+                          onClick={() => handleDelete(user.id)}
+                        >
+                          Delete{" "}
+                          <Icon style={{ marginBottom: "-4px" }}>delete</Icon>
+                        </button>
+                      </ButtonGroup>
+                    </div>
+                  </StyledTableCell>
+                </StyledTableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+        <div class="d-flex flex-row">
+          <div class="p-2">
+            {" "}
+            <button
+              style={{ marginTop: "20px" }}
+              className="btn btn-dark"
+              type="submit"
+              size="small"
+              onClick={() => history.push("/")}
+            >
+              Go Back <Icon style={{ marginBottom: "-7px" }}>chevron_left</Icon>
+            </button>
+          </div>
+        </div>
       </div>
-      <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="customized table">
-          <TableHead>
-            <TableRow>
-              <StyledTableCell>Name </StyledTableCell>
-              <StyledTableCell align="center">Email</StyledTableCell>
-              <StyledTableCell align="center">Contact</StyledTableCell>
-              <StyledTableCell align="center">Address</StyledTableCell>
-              <StyledTableCell align="center">Action</StyledTableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {users.map((user) => (
-              <StyledTableRow key={user.id}>
-                <StyledTableCell component="th" scope="row">
-                  {user.name}
-                </StyledTableCell>
-                <StyledTableCell align="center">{user.email}</StyledTableCell>
-                <StyledTableCell align="center">{user.contact}</StyledTableCell>
-                <StyledTableCell align="center">{user.address}</StyledTableCell>
-                <StyledTableCell align="center">
-                  <div className={buttonStyles.root}>
-                    <ButtonGroup
-                      size="small"
-                      variant="contained"
-                      aria-label="contained primary button group"
-                    >
-                      <Button
-                        style={{ marginRight: "5px" }}
-                        color="primary"
-                        onClick={() => history.push(`/editUser/${user.id}`)}
-                      >
-                        Edit
-                      </Button>
-                      <Button
-                        color="secondary"
-                        onClick={() => handleDelete(user.id)}
-                      >
-                        Delete
-                      </Button>
-                    </ButtonGroup>
-                  </div>
-                </StyledTableCell>
-              </StyledTableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
     </div>
   );
 };

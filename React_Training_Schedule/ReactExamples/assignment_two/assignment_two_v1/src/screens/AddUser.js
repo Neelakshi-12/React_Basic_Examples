@@ -41,7 +41,7 @@ const AddUser = () => {
       setError("Please input all input Field");
     } else {
       dispatch(addUser(state));
-      history.push("/");
+      history.push("/home");
       setError("");
     }
   };
@@ -54,7 +54,7 @@ const AddUser = () => {
         color="primary"
         type="submit"
         size="small"
-        onClick={() => history.push("/")}
+        onClick={() => history.push("/home")}
       >
         Go Back
       </Button>

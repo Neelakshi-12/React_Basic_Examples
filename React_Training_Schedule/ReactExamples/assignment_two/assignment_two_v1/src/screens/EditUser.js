@@ -53,7 +53,7 @@ const EditUser = () => {
       setError("Please input all input Field");
     } else {
       dispatch(updateUser(state, id));
-      history.push("/");
+      history.push("/home");
       setError("");
     }
   };
@@ -66,7 +66,7 @@ const EditUser = () => {
         color="primary"
         type="submit"
         size="small"
-        onClick={() => history.push("/")}
+        onClick={() => history.push("/home")}
       >
         Go Back
       </Button>

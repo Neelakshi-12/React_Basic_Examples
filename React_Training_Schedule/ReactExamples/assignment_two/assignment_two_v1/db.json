@@ -1,4 +1,10 @@
 {
+  "login": [
+    {
+      "name": "Neelakshi",
+      "password": "1234567890"
+    }
+  ],
   "user": [
     {
       "name": "Neelakshi",
@@ -18,8 +24,15 @@
       "name": "Jogi",
       "email": "jogi@gmail.com",
       "contact": "7981273981",
-      "address": "A2/104 , Eldeco golf view apartments, Section 3A , Omega 1",
+      "address": "5-137, Brahmin Street achanta",
       "id": 3
+    },
+    {
+      "name": "Chakradhar",
+      "email": "chakri@gmail.com",
+      "contact": "9872391897",
+      "address": "A2/104  , Eldeco golf view apartments, Omega 1",
+      "id": 4
     }
   ]
 }
