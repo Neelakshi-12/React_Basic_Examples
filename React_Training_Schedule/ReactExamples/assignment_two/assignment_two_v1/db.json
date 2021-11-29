@@ -1,0 +1,25 @@
+{
+  "user": [
+    {
+      "name": "Neelakshi",
+      "email": "neelu@gmail.com",
+      "contact": "9827391812",
+      "address": "Andhra",
+      "id": 1
+    },
+    {
+      "name": "Manidhara",
+      "email": "mani@gmail.com",
+      "contact": "8273918239",
+      "address": "Noida",
+      "id": 2
+    },
+    {
+      "name": "Jogi",
+      "email": "jogi@gmail.com",
+      "contact": "7981273981",
+      "address": "A2/104 , Eldeco golf view apartments, Section 3A , Omega 1",
+      "id": 3
+    }
+  ]
+}
